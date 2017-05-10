@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondo"
+    android:orientation="vertical" >
+
+    <include layout="@layout/toolbar_cnfg" android:id="@+id/barra"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="300dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnInventario"
+            android:layout_width="140dip"
+            android:layout_height="150dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="5dip"
+            android:background="#E6D7D9"
+            android:drawableTop="@drawable/inv"
+            android:gravity="center"
+            android:paddingTop="30dip"
+            android:text="Inventario"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/btnCompras"
+            android:layout_width="140dip"
+            android:layout_height="150dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="5dip"
+            android:background="#E6D7D9"
+            android:drawableTop="@drawable/shop"
+            android:gravity="center"
+            android:paddingTop="30dip"
+            android:text="Compras"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:drawableTop="@drawable/exit"
+            android:layout_width="140dip"
+            android:layout_height="150dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="10dip"
+            android:paddingTop="30dip"
+            android:text="Salir"
+            android:background="#E6D7D9"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lv_custom_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="5dip" >
+    </ListView>
+
+
+</LinearLayout>

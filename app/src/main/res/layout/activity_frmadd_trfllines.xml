@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="@color/colorFondo">
+
+    <include layout="@layout/toolbar_cnfg" android:id="@+id/barra"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/barra"
+        android:layout_marginLeft ="10dp"
+        android:layout_marginRight ="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alignTop5"
+            android:hint="Escaneé su código de barras"
+            android:background="@drawable/edttext_bg"
+            android:id="@+id/txtTrnsfLines_CodeBars"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/colorTint"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/lnlItem"  >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="Cantidad a Surtir"
+                        android:textColor="@color/colorNegro"
+                        android:visibility="visible"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:id="@+id/lblTrnsfLines_CntTotalReg"
+                        android:textSize="@dimen/Title_21"
+                        android:visibility="visible"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="204dp"
+                        android:layout_marginStart="204dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:id="@+id/lblTrnsfLines_OrderEntry"
+                        android:textSize="@dimen/Title_21"
+                        android:visibility="invisible"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="204dp"
+                        android:layout_marginStart="204dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="Cantidad total a ingresar"
+                        android:textColor="@color/colorNegro"
+                        android:textSize="18dp"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:id="@+id/lblTrnsfLines_CntTotal"
+                            android:textSize="@dimen/Title_21"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="204dp"
+                            android:layout_marginStart="204dp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/alignTop5"
+                    android:text="Ubicación"
+                    android:textColor="@color/colorNegro"
+                    android:textSize="@dimen/Font_16"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edttext_bg"
+                    android:id="@+id/txtTrnsfLines_Ubic"
+                    android:textColor="#000000"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:enabled="false"
+                    android:textCursorDrawable="@null"
+                    android:textColorHint="@color/colorTint" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción del artículo"
+                    android:layout_marginTop="@dimen/alignTop5"
+                    android:textColor="@color/colorNegro"
+                    android:textSize="@dimen/Font_16"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/lblTrnsfLines_ItemName"
+                    android:layout_below="@+id/linearLayout"
+                    android:textSize="@dimen/Font_14"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Código del barras"
+                    android:textColor="@color/colorNegro"
+                    android:textSize="@dimen/Font_16"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/lblTrnsfLines_CodeBars"
+                    android:layout_below="@+id/linearLayout"
+                    android:textSize="@dimen/Font_14"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="Almacén"
+                    android:textColor="@color/colorNegro"
+                    android:textSize="@dimen/Font_16"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/lblTrnsfLines_WshCode"
+                    android:layout_below="@+id/linearLayout"
+                    android:textSize="@dimen/Font_14"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+               <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="invisible"
+                    android:id="@+id/lblTrnsfLines_LineNum"
+                    android:layout_below="@+id/lblCntOnLines_WshCode"
+                    android:textSize="@dimen/Font_14"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/lblTrnsfLines_Msg"
+                    android:layout_below="@+id/lblCntOnLines_LineNum"
+                    android:textSize="@dimen/Font_16"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Código del artículo."
+                    android:textColor="@color/colorNegro"
+                    android:visibility="invisible"
+                    android:textSize="@dimen/Font_16"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/lblTrnsfLines_ItemCode"
+                    android:layout_below="@+id/linearLayout"
+                    android:textSize="@dimen/Font_14"
+                    android:visibility="invisible"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center" android:visibility="invisible"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/alignTop5">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btnMns"
+                            android:src="@drawable/menos"
+                            android:scaleType="center"
+                            android:background="@drawable/btncircle_negro"
+                            style="@android:style/Widget.Button"
+                            android:onClick="btnMenos"
+                            />
+
+                        <EditText
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:hint="0"
+                            android:background="@drawable/edttext_bg"
+                            android:gravity="center"
+                            android:id="@+id/txtTrnsfLines_Cnt"
+                            android:textColor="@color/colorNegro"
+                            android:textSize="@dimen/Font_16"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:inputType="number"
+                            android:textCursorDrawable="@null"
+                            android:textColorHint="@color/colorNegro"
+                            />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btnMas"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/btncircle_negro"
+                            android:scaleType="center"
+                            android:src="@drawable/mas"
+                            android:onClick="btnMas"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnAdd_CntOnLines"
+            android:src="@drawable/save"
+            app:backgroundTint="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            style="@android:style/Widget.Button"
+            android:onClick="Btn_SaveItem"
+            />
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ijam.app_wms">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activityes.SplashActivity"
+            android:configChanges="screenSize|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activityes.MainActivity"
+            android:configChanges="screenSize|orientation" />
+        <activity
+            android:name=".Activityes.frmCnfg"
+            android:configChanges="screenSize|orientation"
+            android:label="Configuración"
+            android:parentActivityName=".Activityes.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activityes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Activityes.frmMenu"
+            android:label="Menú" />
+        <activity
+            android:name=".Activityes.frmMenuInv"
+            android:label="Inventario" />
+        <activity
+            android:name=".Activityes.frmConteoOnline"
+            android:label="Conteo Online" />
+        <activity
+            android:name=".Activityes.frmAdd_CntOnHead"
+            android:label="Conteo Online" />
+        <activity
+            android:name=".Activityes.frmAdd_CntOnLines"
+            android:label="Escaneo de Artículos" />
+        <activity android:name=".Activityes.frmLst_CntOnLines"
+            android:label="Artículos." />
+        <activity android:name=".Activityes.frmTransfer"
+            android:label="Listado de Pickings." />
+        <activity
+            android:name=".Activityes.frmAdd_TrflLines"
+            android:label="Escaneo de Artículos" />
+        <activity android:name=".Activityes.frmLst_TrflLines"
+            android:label="Artículos." />
+
+        <activity
+            android:name=".Activityes.frmMenuCmp"
+            android:label="Compras" />
+        <activity android:name=".Activityes.frmEntradas"
+            android:label="Listado de Pedidos" />
+        <activity
+            android:name=".Activityes.frmAdd_EntradasLines"
+            android:label="Escaneo de Artículos" />
+        <activity android:name=".Activityes.frmLst_EntradasLines"
+            android:label="Artículos." />
+    </application>
+
+</manifest>

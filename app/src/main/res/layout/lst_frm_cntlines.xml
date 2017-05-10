@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:background="@color/colorFondo"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft ="5dp"
+        android:layout_marginRight ="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout"
+        android:weightSum="1"
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            >
+
+            <ImageView
+                android:id="@+id/imgOn_Dtl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/lblCntOn_DtlDocEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgOn_Dtl"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/imgOn_Dtl"
+                android:text="TextView"
+                android:textSize="@dimen/Font_16"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/lblCntOn_DtlCodeBars"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lblCntOn_DtlCodeBars"
+                android:textColor="@color/colorNegro"
+                android:textSize="@dimen/Font_14"
+
+                android:layout_toRightOf="@+id/imgOn_Dtl"
+                android:layout_toEndOf="@+id/imgOn_Dtl"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/lblCntOn_DtlItemName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lblCntOn_DtlItemName"
+                android:textColor="@color/colorNegro"
+                android:textSize="@dimen/Font_14"
+                android:layout_below="@+id/lblCntOn_DtlCodeBars"
+                android:layout_toRightOf="@+id/imgOn_Dtl"
+                android:layout_toEndOf="@+id/imgOn_Dtl" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo de Conteo"
+                android:id="@+id/textView"
+                android:textColor="@color/colorNegro"
+                android:textSize="@dimen/Font_14"
+                android:layout_below="@+id/lblCntOn_DtlItemName"
+                android:layout_toRightOf="@+id/imgOn_Dtl"
+                 />
+
+            <TextView
+                android:id="@+id/lblCntOn_DtlTipoCnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lblCntOn_DtlTipoCnt"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/Font_14"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@+id/lblCntOn_DtlItemName"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_toEndOf="@+id/textView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantidad"
+                android:id="@+id/textView1"
+                android:textColor="@color/colorNegro"
+                android:textSize="@dimen/Font_14"
+                android:layout_below="@+id/textView"
+                android:layout_toRightOf="@+id/imgOn_Dtl"
+                />
+
+            <TextView
+                android:id="@+id/lblCntOn_DtlQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lblCntOn_DtlTipoCnt"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/Font_16"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@+id/lblCntOn_DtlTipoCnt"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_toEndOf="@+id/textView" />
+
+            <ImageView
+                android:id="@+id/imgOn_DtlStatus"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+
+                android:layout_below="@+id/lblCntOn_DtlTipoCnt"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

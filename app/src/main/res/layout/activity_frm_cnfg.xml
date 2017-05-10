@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ijam.app_wms.Activityes.frmCnfg"
+    android:background="@color/colorFondo">
+    <include layout="@layout/toolbar_cnfg" android:id="@+id/barra"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/barra"
+        android:gravity="center"
+        android:layout_marginLeft ="15dp"
+        android:layout_marginRight ="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/lblEntry"
+            android:enabled="false"
+            android:visibility="invisible" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alignTop15"
+            android:hint="URL Web Services"
+            android:id="@+id/txtServer"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:background="@drawable/edttext_bg"
+            android:textColorHint="@color/colorTint"
+            android:textCursorDrawable="@null" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alignTop15"
+            android:hint="Namespace"
+            android:id="@+id/txtNameSpace"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:background="@drawable/edttext_bg"
+            android:textColorHint="@color/colorTint"
+            android:textCursorDrawable="@null" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alignTop15"
+            android:hint="Nombre de la Sociedad"
+            android:id="@+id/txtDB"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:background="@drawable/edttext_bg"
+            android:textColorHint="@color/colorTint"
+            android:textCursorDrawable="@null" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Versión 9.2.1.4"
+            android:gravity="right"
+            android:textColor="@color/colorNegro" />
+
+        <Button
+            android:id="@+id/btnSave_Cnfg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:text="Guardar Configuración."
+            android:layout_weight="0.04"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btngenerico"
+            android:onClick="AgregarConfiguracion"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

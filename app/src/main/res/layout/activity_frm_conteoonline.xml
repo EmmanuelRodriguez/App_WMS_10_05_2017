@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="@color/colorFondo"
+    tools:context="ijam.app_wms.Activityes.frmConteoOnline"
+    >
+
+    <include layout="@layout/toolbar_cnfg" android:id="@+id/barra"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/barra"
+        android:layout_marginLeft ="10dp"
+        android:layout_marginRight ="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <ListView
+            android:id="@+id/list_Onl_Docs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:divider="@color/colorTint"
+            android:dividerHeight="1dp"
+            style="@style/Theme.AppCompat.Light"
+            >
+        </ListView>
+
+    </LinearLayout>
+
+<!--    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/record_fab"
+        android:src="@drawable/mas"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        style="@android:style/Widget.Button"
+        android:onClick="AddOnHead"
+       />-->
+
+</RelativeLayout>

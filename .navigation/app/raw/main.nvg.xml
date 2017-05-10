@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ijam.app_wms.Activityes.frmCnfg"/>
+      <point      
+        x = "88"      
+        y = "124"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ijam.app_wms.Activityes.MainActivity"/>
+      <point      
+        x = "1504"      
+        y = "116"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ijam.app_wms.Activityes.SplashActivity"/>
+      <point      
+        x = "2936"      
+        y = "136"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

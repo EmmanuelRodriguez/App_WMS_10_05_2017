@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="@color/colorFondo">
+
+    <include layout="@layout/toolbar_cnfg" android:id="@+id/barra"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/barra"
+        android:layout_marginLeft ="10dp"
+        android:layout_marginRight ="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alignTop15"
+            android:hint="Referencia"
+            android:background="@drawable/edttext_bg"
+            android:id="@+id/txtCntOnHead_Referencia"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/colorTint" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Fecha de conteo"
+                android:editable="false"
+                android:id="@+id/txtCntOnHead_Fecha"
+                android:textColor="#000000"
+                android:singleLine="true"
+                android:foregroundTint="#000000"
+                android:textCursorDrawable="@null"
+                android:background="@drawable/edttext_bg"
+                android:textColorHint="@color/colorTint"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/imgOnHead_Fecha"
+                android:layout_toStartOf="@+id/imgOnHead_Fecha"
+                 />
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/imgOnHead_Fecha"
+                android:src="@drawable/date"
+                android:onClick="mostrarDate"
+                android:background="@color/colorFondo"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"/>
+          </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Hora de conteo"
+                android:editable="false"
+                android:id="@+id/txtCntOnHead_Hora"
+                android:textColor="#000000"
+                android:singleLine="true"
+                android:background="@drawable/edttext_bg"
+                android:textColorHint="@color/colorTint"
+                android:textCursorDrawable="@null"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/imgOnHead_Hora"
+                android:layout_toStartOf="@+id/imgOnHead_Hora" />
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/imgOnHead_Hora"
+                android:background="@color/colorFondo"
+                android:src="@drawable/clock"
+                android:onClick="mostrarTimer"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"/>
+
+        </RelativeLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alignTop15"
+            android:hint="Comentarios"
+            android:id="@+id/txtCntOnHead_Comentarios"
+            android:textColor="#000000"
+            android:textCursorDrawable="@null"
+            android:background="@drawable/edttext_bg"
+            android:textColorHint="@color/colorTint" />
+
+        <Button
+            android:id="@+id/btnSave_Cnfg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/btngenerico"
+            android:textColor="#ffff"
+            android:text="Crear documento"
+            android:layout_marginTop="30dp"
+            android:onClick="ValidaCntOnHead"
+
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

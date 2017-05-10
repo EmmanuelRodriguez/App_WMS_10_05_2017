@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:background="@color/colorFondo">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft ="5dp"
+        android:layout_marginRight ="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout"
+        android:weightSum="1"
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            >
+
+            <ImageView
+                android:id="@+id/imgEntrHead"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/lblEntr_DocEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgEntrHead"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/imgEntrHead"
+                android:text="TextView"
+                android:textSize="16sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/lblEntr_AbsEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgEntrHead"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/imgEntrHead"
+                android:text="TextView"
+                android:textSize="16sp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/lblEntr_DocNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:textColor="@color/colorPrimary"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/Font_16"
+                android:layout_alignTop="@+id/textView2"
+                android:layout_toRightOf="@+id/textView2"
+                android:layout_marginLeft="17dp"
+                android:layout_marginStart="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/lblEntr_DocDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:textColor="@color/colorPrimary"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/Font_14"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/lblEntr_DocEntry"
+                android:layout_toRightOf="@+id/textView3"
+                android:layout_toEndOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/lblEntr_Tipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:textColor="@color/colorPrimary"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/Font_14"
+                android:enabled="false"
+                android:layout_marginLeft="10dp"
+                android:layout_above="@+id/textView5"
+                android:layout_toRightOf="@+id/textView4"
+                android:layout_alignRight="@+id/lblEntr_Cmnts"
+                android:layout_alignEnd="@+id/lblEntr_Cmnts" />
+
+            <TextView
+                android:id="@+id/lblEntr_CardCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:textColor="@color/colorPrimary"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/Font_14"
+                android:layout_alignTop="@+id/textView5"
+                android:layout_toRightOf="@+id/textView3"
+                android:layout_toEndOf="@+id/textView2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pedidos"
+                android:textColor="@color/colorNegro"
+                android:id="@+id/textView2"
+                android:textSize="@dimen/Font_16"
+                android:layout_alignTop="@+id/lblEntr_DocEntry"
+                android:layout_alignLeft="@+id/lblEntr_DocEntry"
+                android:layout_alignStart="@+id/lblEntr_DocEntry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha"
+                android:textColor="@color/colorNegro"
+                android:id="@+id/textView3"
+                android:textSize="@dimen/Font_14"
+
+                android:layout_below="@+id/lblEntr_DocEntry"
+                android:layout_alignLeft="@+id/lblEntr_DocEntry"
+                android:layout_alignStart="@+id/lblEntr_DocEntry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo"
+                android:enabled="false"
+                android:textColor="@color/colorNegro"
+                android:id="@+id/textView4"
+                android:textSize="@dimen/Font_14"
+                android:visibility="invisible"
+                android:layout_below="@+id/lblEntr_DocNum"
+                android:layout_toRightOf="@+id/lblEntr_DocDate"
+                android:layout_toEndOf="@+id/lblEntr_DocDate"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SN"
+                android:textColor="@color/colorNegro"
+                android:id="@+id/textView5"
+                android:textSize="@dimen/Font_14"
+
+                android:layout_below="@+id/lblEntr_DocDate"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_alignStart="@+id/textView3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:textColor="@color/colorPrimary"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/Font_14"
+                android:id="@+id/lblEntr_Cmnts"
+                android:layout_below="@+id/lblEntr_CardCode"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@+id/textView5"
+                android:layout_alignStart="@+id/textView5" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
