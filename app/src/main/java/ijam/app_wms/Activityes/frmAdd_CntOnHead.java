@@ -1,5 +1,4 @@
 //Agregar conteo en línea
-//Prueba Subir GitHub ***Prueba 2***
 
 package ijam.app_wms.Activityes;
 
